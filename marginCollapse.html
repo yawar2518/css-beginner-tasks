@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        .container {
+            border: 5px solid blue;
+            margin: 40px;
+        }
+
+        p {
+            border: 5px solid rebeccapurple;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.
+           Two negative margins will collapse and the smallest (furthest from zero) value will be used.
+           If one margin is negative, its value will be subtracted from the total. */
+
+        .one {
+            margin-bottom: -20px;
+        }
+
+        .two {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="one">I am paragraph one.</p>
+        <p class="two">I am paragraph two.</p>
+    </div>
+
+</body>
+
+</html>

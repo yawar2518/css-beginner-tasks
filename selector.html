@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <!-- Internal Css -->
+     <style>
+        body{
+            font-family: Arial;
+            background-color: aquamarine;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .intro{
+            background-color: beige;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 30px;
+        }
+
+        .container{
+            width: 200px;
+            border: 2px solid black;
+            padding: 30px;
+            background-color: cadetblue;
+            transition: all 0.4s ease-in;
+        }
+
+        .container:hover{
+            width: 400px;
+            background-color: violet;
+
+        }
+
+         .highlight{
+            color: red;
+        }
+
+         p{
+            color: yellow;
+        }
+
+       
+
+        .container ul{
+            color: yellowgreen;
+        }
+
+        .container ul li{
+            font-size: large;
+        }
+
+        button{
+           position: relative;
+           top: 5px;
+           padding: 3px;
+           border-radius: 8px;
+           border: 1px solid red;
+           color: green;
+           background-color: black;  
+           transition: all 0.4s ease;
+        }
+
+        button:hover{
+            border: 1px solid green;
+           color: red;
+           background-color: white;
+           cursor: pointer;
+        }
+
+     </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container">
+            
+                <h1 id="title">Welcome</h1>
+            
+                <p>Normal paragraph</p>
+            
+                <p class="highlight">Highlighted text</p>
+            
+                <ul>
+            
+                    <li>Item 1</li>
+            
+                    <li>Item 2</li>
+            
+                </ul>
+            
+                <button>Click me</button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

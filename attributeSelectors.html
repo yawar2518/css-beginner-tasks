@@ -1,0 +1,70 @@
+<!-- Attribute - Presence and value selectors -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: antiquewhite;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 50px;
+            border: 2px solid salmon;
+            font-size: 1.5rem;
+            margin: 50px;
+            line-height: 2rem;
+        }
+
+        li {
+            display: inline-block;
+            margin: 1.2rem;
+        }
+
+        /* All attributed lists who belongs to any class */
+        li[class] {
+            color: darkviolet;
+        }
+
+        /* All list attributes who belongs to class a only  */
+        li[class="a"] {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        /* All li attributes from class a and other separated classes */
+        li[class~="a"] {
+            background-color: rgba(222, 170, 170, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Attribute presence and value selectors</h1>
+    <ul>
+        <li>Item 1</li>
+        <li class="a">Item 2</li>
+        <li class="a b">Item 3</li>
+        <li class="ab">Item 4</li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .boxModel{
+            background-color: turquoise;
+            margin: 10px;
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        .box1{
+            background-color: red;
+            position: relative;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .box1::before{
+            content: "Box A";
+        }
+
+        .box2::before{
+            content: "Box B";
+        }
+
+        .box3::before{
+            content: "Box C";
+        }
+
+        .box2{
+            background-color: green;
+            margin-left: 33%;
+            box-sizing: content-box;
+            position: relative;
+        }
+        
+        .box3{
+            background-color: blue;
+            margin-left: 66%;
+            box-sizing: content-box;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="boxModel">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

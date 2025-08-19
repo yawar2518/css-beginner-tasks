@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and Border</title>
+    <style>
+        body {
+            padding: 1em;
+            font: 1.2em / 1.5 sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            padding: 0.5em;
+        }
+
+        /* Add a background image and size it so that it covers the box. You can use the following image: */
+        /* Give the box a 5px black solid border, with rounded corners of 10px */
+        .box {
+            border: 5px solid black;
+            border-radius: 10px;
+            background-image: url('https://mdn.github.io/shared-assets/images/examples/balloons.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        /* Give the <h2> a semi-transparent black background color, and make the text white. */
+        h2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <h2>Backgrounds & Borders</h2>
+        </div>
+    </header>
+</body>
+
+</html>

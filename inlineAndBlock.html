@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Vs Block Elements</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background-color: bisque;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container p{
+            background-color: tomato;
+            padding: 5px;
+            border: 1px solid black;
+            display: inline;
+        }
+
+        .container span{
+            background-color: blueviolet;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+    </div>
+</body>
+</html>
